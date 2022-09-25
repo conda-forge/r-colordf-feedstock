@@ -1,4 +1,4 @@
-{% set version = '0.1.4' %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/colorDF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/colorDF/colorDF_{{ version }}.tar.gz
-  sha256: 2c4c9f1c043e8e6c20c7578b26b6a0e45603752689df15f68271d50381723de0
+  sha256: 835f524ee06c35f0164d6c9f96e2bf83be6f30e4e92955e022d387c26ad259f4
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,13 +40,10 @@ test:
 about:
   home: https://january3.github.io/colorDF/, https://github.com/january3/colorDF/
   license: GPL-3.0-only
-  summary: Colorful Data Frames in the terminal. The new class does change the behaviour of any
-    of the objects, but adds a style definition and a print method. Using ANSI escape
-    codes, it colors the terminal output of data frames. Some column types (such as
-    p-values and identifiers) are automatically recognized.
+  summary: Colorful Data Frames in the terminal. The new class does change the behaviour of any of the objects, but adds a style definition and a print method. Using ANSI escape codes, it colors the terminal output of data frames. Some column types (such as p-values and identifiers) are automatically recognized.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
