@@ -1,11 +1,11 @@
-About r-colordf
-===============
+About r-colordf-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-colordf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://january3.github.io/colorDF/, https://github.com/january3/colorDF/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-colordf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Colorful Data Frames in the terminal. The new class does change the behaviour of any of the objects, but adds a style definition and a print method. Using ANSI escape codes, it colors the terminal output of data frames. Some column types (such as p-values and identifiers) are automatically recognized.
 
